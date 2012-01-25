@@ -21,11 +21,15 @@ permissions:
         children:
             log.admin.purge: true
             log.admin.clean: true
+            log.admin.rollback: true
     log.admin.purge:
         description: Allows you to erase the Log database
         default: op
     log.admin.clean:
         description: Allows you to delete Log entries older than a certain amount of time
+        default: op
+    log.admin.rollback:
+        description: Rolls back the recorded changes of a player
         default: op
 commands:
     log:

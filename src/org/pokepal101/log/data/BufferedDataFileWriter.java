@@ -1,4 +1,4 @@
-package org.pokepal101.log;
+package org.pokepal101.log.data;
 
 import java.io.*;
 

@@ -1,5 +1,5 @@
 name: Log
-main: org.pokepal101.log.pokepal101.log.LogPlugin
+main: org.pokepal101.log.LogPlugin
 version: 0.8
 author: pokepal101
 description: >

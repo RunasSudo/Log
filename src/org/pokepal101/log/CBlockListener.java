@@ -3,14 +3,7 @@ package org.pokepal101.log;
 import java.util.*;
 
 import org.bukkit.block.Block;
-import org.bukkit.block.BlockFace;
-import org.bukkit.Material;
 import org.bukkit.event.block.*;
-
-import be.darnell.mc.log.ChangeSet;
-import be.darnell.mc.log.LogPlugin;
-import be.darnell.mc.log.Modification;
-import be.darnell.mc.log.Position;
 
 /**
  * Sample block listener

@@ -1,6 +1,7 @@
 Log is a plugin that logs block changes. It's aim is to be a feature-filled but lightweight alternative to BigBrother.
 Log is designed for small-medium sized servers where the main focus is identifying and banning the griefer, rather than fixing the griefed structure (backups should be used for that).
-Compatible with 617 onwards. Latest build officially tested on 1240. Reported working on 1492.
+Compatible with 617 onwards. Latest build officially tested on 1792.
+The log file format has changed, and previous logs are incompatible.
 
 /
     README - This file
@@ -9,15 +10,19 @@ Compatible with 617 onwards. Latest build officially tested on 1240. Reported wo
         org/
             pokepal101/
                 log/
-                    pokepal101/
-                        log/
-                            BufferedDataFileWriter.java - The buffered file writer implementation for log.db2
-                            CBlockListener.java - The block listener for destroy/place events
-                            CPlayerListener.java - The player listener for stick/bone rightclicking
-                            CachedDataFileReader.txt - Not implemented
-                            LogPlugin.java - The main plugin class
-                            Modification.java - A class representing a block modification
-                            Position.java - A class representing a position in the Minecraft world
+                    CBlockListener.java - The block listener for destroy/place events
+                    CPlayerListener.java - The player listener for stick/bone rightclicking
+                    CachedDataFileReader.txt - Not implemented
+                    LogPlugin.java - The main plugin class
+                    Modification.java - A class representing a block modification
+                    Position.java - A class representing a position in the Minecraft world
+                    ChangeSet.java - A representation of a changeset
+                    
+                    data/
+                        DataStore.java - The interface for the data storage model
+                        FileDataStore.java - The implementation of the data storage for a file
+                        BufferedDataFileWriter.java - The buffered file writer implementation for log.db2
+
 
 For more information, go to:
 http://dev.bukkit.org/server-mods/log/
